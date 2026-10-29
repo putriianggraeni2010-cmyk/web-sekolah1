@@ -15,13 +15,13 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="/picture/logo.png"
+                <img src="{{ asset('picture/logo.png') }}"
                     alt="Logo" width="50" height="34" class="d-inline-block align-text-top">
                 Jakarta Intercultural School
             </a>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/beranda">Beranda</a>
+                    <a class="navbar-brand" href="{{ route('beranda') }}">Beranda</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -123,7 +123,7 @@
             <!-- SLIDE 1 -->
             <div class="carousel-item active">
 
-                <img src="{{ asset('/picture/tampilan1.jpg') }}"
+                <img src="{{ asset('picture/tampilan1.jpg') }}"
                     class="d-block w-100"
                     alt="Banner Sekolah"
                     width="100" height="350">
@@ -143,7 +143,7 @@
             <!-- SLIDE 2 -->
             <div class="carousel-item">
 
-                <img src="{{ asset('/picture/tampilan2.jpg') }}"
+                <img src="{{ asset('picture/tampilan2.jpg') }}"
                     class="d-block w-100"
                     alt="Banner Sekolah"
                     width="100" height="350">
@@ -153,7 +153,7 @@
             <!-- slide 3 -->
             <div class="carousel-item">
 
-                <img src="{{ asset('/picture/tampilan3.jpg') }}"
+                <img src="{{ asset('picture/tampilan3.jpg') }}"
                     class="d-block w-100"
                     alt="Banner Sekolah"
                     width="100" height="350">
@@ -198,8 +198,8 @@
                         </h5>
 
                         <!-- foto -->
-                        <img src="{{('/picture/kepalasekolah.jpg') }}"
-                            class=" rounded float-start me-3 mb-2"
+                        <img src="{{ asset('picture/kepalasekolah.jpg') }}"
+                            class="rounded float-start me-3 mb-2"
                             style="width: 30%;"
                             alt="Foto profil">
 
